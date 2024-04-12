@@ -7,6 +7,37 @@
   <link rel="stylesheet" href="style/home.css">
   <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
   <title>Churrasco’s Delivery</title>
+
+<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16527218497"></script>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16527218497');
+</script>
+    
+<!-- Event snippet for COMPRA CHURRAS conversion page -->
+<!-- Event snippet for COMPRA CHURRAS conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16527218497/i_iaCO6u0KUZEMGu5cg9',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 
 <body>
