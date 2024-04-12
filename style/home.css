@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html, body
+{
+    height: 100%;
+}
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+
+.conteiner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.cabecalho
+{   
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 24px;
+    width: 90%;
+}
+.cabecalho > img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.conteudo
+{
+    padding: 10px;
+    width: 80%;
+    max-width: 450px;
+}
+
+.conteudo > ul
+{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo > ul > li
+{
+    display: flex;
+    align-items: center;
+}
+
+.conteudo > ul > li > a > img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.conteudo > ul > li > a
+{   
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    color: white;
+    letter-spacing: 2px;
+   
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s linear;
+    
+}
+
+
+.conteudo > ul > li > a:hover
+{
+    background-color: #3b3b3b;
+}
+
+.text
+{
+    width: 100%;
+    font-size: 16px;
+}
+
+
+@media (width < 500px)
+{
+    .text
+    {
+        font-size: 14px;
+    }
+
+    .cabecalho
+    {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .conteudo
+    {
+       
+        padding: 0;
+        max-width: 350px;
+    }
+
+    .conteiner
+    {   
+        padding: 0;
+    }
+}
+
